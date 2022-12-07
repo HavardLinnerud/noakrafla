@@ -1,0 +1,119 @@
+td {
+  max-width: 220px;
+  outline: rgba(0, 0, 0, 0.11) 2px solid;
+  white-space: pre-line;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  padding: 10px 5px;
+  word-break: normal;
+  /* overflow: hidden; */
+  text-align: left;
+  vertical-align: top;
+  background: rgba(83, 83, 83, 0.637);
+  transition: all 0.2s ease-in-out;
+  line-height: 1.5em;
+  color: rgb(90, 90, 90);
+}
+
+.activeCol {
+  background-color: rgb(255, 255, 255);
+}
+.rowLabel {
+  background-color: rgb(252, 146, 46);
+  vertical-align: middle;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  width: 100px;
+}
+.titleBox {
+  background-color: rgb(255, 164, 59);
+  outline: 4px solid #f87d1900;
+  color: #454545;
+  width: 120px;
+  min-width: fit-content;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin: 10px;
+  margin-bottom: 50px;
+  transition: 0.2s all ease-in-out;
+  min-height: 45px;
+  /* height: 35px; */
+  height: fit-content;
+}
+
+.titleBox.activeTitleBox {
+  outline: 4px solid #f87d19;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(251 146 60);
+  color: white;
+  transform: scale(1.05);
+  z-index: 1;
+}
+.tableHeaderText {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.4em;
+  /* letter-spacing: 0.1em; */
+}
+
+.tableHeaderFlag {
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  position: absolute;
+  /* display: grid; */
+  right: -31px;
+  top: -20px;
+  height: 90%;
+  background-color: rgb(74, 167, 74);
+  color: white;
+  width: 60px;
+  place-items: center;
+  padding-top: 12px;
+  text-align: center;
+
+  /* vertical-align: middle; */
+  z-index: 1;
+}
+
+.headerCell {
+  vertical-align: middle;
+  padding: 5px 10px;
+  background-color: rgb(71, 71, 71);
+  color: rgb(112, 112, 112);
+}
+
+.headerCell.active {
+  color: rgb(226, 226, 226);
+  color: rgb(250, 163, 50);
+}
+
+.titleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* background-color: green; */
+  justify-content: center;
+}
+
+.table {
+  margin-right: 20px;
+}
+
+.arrowIcon {
+  position: absolute;
+  right: -16px;
+  top: 20px;
+  z-index: 10;
+}
+
+.img1 {
+  max-width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

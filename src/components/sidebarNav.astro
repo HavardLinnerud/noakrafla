@@ -1,36 +1,82 @@
+<script is:inline>
+  // document.getElementById("button").addEventListener("click",  handleClick);
+
+  function showContent(id, id2) {
+    var divs = document.getElementsByClassName("divs");
+    var lunks = document.getElementsByClassName("links");
+
+    for (var no = 0; no < divs.length; no++) {
+      if (divs[no].classList.contains("divs")) {
+        // on cible les divs dont la class est 'divs'
+        divs[no].style.display = "none"; // on les masque tous
+      }
+    }
+
+    for (var no = 0; no < lunks.length; no++) {
+      if (lunks[no].classList.contains("links")) {
+        // on cible les divs dont la class est 'divs'
+        lunks[no].classList.remove("activeLink"); // on les masque tous
+      }
+    }
+    document.getElementById(id).style.display = "block"; // on affiche le div appelé
+    document.getElementById(id2).classList.add("activeLink"); // on affiche le div appelé
+  }
+</script>
 <div id="mySidenav" class="sidenav">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-  
-  <!-- Use any element to open the sidenav -->
-  
-  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <a
+    class="links activeLink"
+    id="id1"
+    href="javascript:showContent('test1', 'id1');">4 Dimensions of PEM</a
+  >
+  <a class="links" id="id2" href="javascript:showContent('test2', 'id2');"
+    >Phases and Steps</a
+  >
+  <a class="links" id="id3" href="javascript:showContent('test3', 'id3');"
+    >Work Breakdown Structure</a
+  >
+  <a class="links" id="id4" href="javascript:showContent('test4', 'id4');"
+    >Status Definitions</a
+  >
+  <a class="links" id="id4" href="javascript:showContent('test4', 'id4');"
+    >Difference Between S and QL</a
+  >
+  <a class="links" id="id4" href="javascript:showContent('test4', 'id4');"
+    >Checkout Process</a
+  >
+</div>
 
-  <style>
-    .sidenav {
-  height: 100%;
-  width: 200px;
-  background-color: #111;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
-}
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  transition: 0.3s;
-}
+<!-- Use any element to open the sidenav -->
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 
-  </style>
+<style>
+  .sidenav {
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+    height: 100%;
+    width: 200px;
+    height: fit-content;
+    background-color: #111;
+    padding: 20px 4px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .activeLink {
+    color: #ffa53d !important;
+  }
+</style>
