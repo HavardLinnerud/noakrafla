@@ -1,0 +1,285 @@
+---
+const items = [
+  { title: "feasibility", flag: "1" },
+  { title: "concept", flag: "2" },
+  { title: "pre-execution", flag: "3" },
+  { title: "detail engineering", flag: "4" },
+  { title: "construction", flag: "5" },
+  { title: "decommissioning", flag: "6" },
+];
+---
+
+<style type="text/css">
+  .tg {
+    border-collapse: collapse;
+    /* border-spacing: 1; */
+  }
+  .tg td {
+    outline: rgba(0, 0, 0, 0.11) 2px solid;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg th {
+    outline: rgba(0, 0, 0, 0.11) 2px solid;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  .tg .side {
+    background-color: orange;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+  /* .tg .tg-5n6u {
+    background-color: #999903;
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-twdu {
+    background-color: #bfbfbf;
+    border-color: inherit;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .tg .tg-k76o {
+    background-color: #e7e6e6;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-i2m8 {
+    background-color: #bfbfbf;
+    border-color: inherit;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .tg .tg-ua4r {
+    background-color: #f8992e;
+    border-color: inherit;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-9cyx {
+    background-color: #bfbfbf;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .tg .tg-0k6w {
+    background-color: #e7e6e6;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-sk2j {
+    background-color: #e7e6e6;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-ucjv {
+    background-color: #f2f2f2;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-0vn4 {
+    background-color: red;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg .tg-0lax {
+    text-align: left;
+    vertical-align: top;
+  } */
+
+  @media screen and (max-width: 767px) {
+    .tg {
+      width: auto !important;
+    }
+    .tg col {
+      width: auto !important;
+    }
+    .tg-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+</style>
+<style>
+  .titleBox {
+    background-color: rgb(134, 134, 134);
+    color: white;
+    width: 120px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+
+  .titleBox2 {
+    background-color: rgb(54, 121, 54);
+    color: white;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 3px 6px;
+    border-radius: 5px;
+    margin: 0px -10px;
+    z-index: 1;
+  }
+
+  .titleContainer {
+    display: flex;
+    width: 100%;
+    /* background-color: green; */
+    justify-content: center;
+  }
+
+  .img1 {
+    width: 100%;
+    margin: 2em 1em;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+</style>
+
+<div class="titleContainer">
+  {
+    items.map((item) => (
+      <div style="display:flex">
+        <div class="titleBox">{item.title}</div>
+        <div class="titleBox2">{item.flag}</div>
+      </div>
+    ))
+  }
+</div>
+
+<div class="tg-wrap">
+  <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-ua4r">Steps</th>
+        <th class="tg-twdu">Pre Execution</th>
+        <th class="tg-i2m8">Design basis &amp; briefs established</th>
+        <th class="tg-i2m8">Main Layout/Structure Frozen</th>
+        <th class="tg-i2m8">Detail Design Frozen</th>
+        <th class="tg-9cyx">Detail Design Complete</th>
+        <th class="tg-9cyx">As built &amp; Follow-on</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-ua4r side">Startproduct</td>
+        <td class="tg-0k6w col1"
+          >Contract (VO)<br /> FEED report<br /> Definition of Reference Case#4 (incl
+          Functional Requirements &amp; Design Basis)<br /> Contract Strategy<br
+          /> Execution Plan<br /> SOW definition (e.g. Statnett)<br /> Agreed PEM<br
+          /> LCI requirements - tools and collaboration platform defined<br /> Interface
+          register</td
+        >
+        <td class="tg-sk2j col2"
+          >Pre Execution deliverables<br /> Konsesjonsvilkår<br /> First draft construction
+          method from Company<br /> Clients DG3</td
+        >
+        <td class="tg-sk2j col3"
+          >Final Construction method from Company<br /> Final survey information
+          laser scans geo etc.<br /> First supplier information from Company<br
+          /> QL1 Design</td
+        >
+        <td class="tg-sk2j col4"
+          >Final supplier information from Company<br /> QL2 Design</td
+        >
+        <td class="tg-k76o col5">QL3 Design</td>
+        <td class="tg-k76o col6"
+          >QL4 Design<br /> Red line markup<br /> Digital measurement from construction</td
+        >
+      </tr>
+      <tr>
+        <td class="tg-ua4r side">Engineering main objectives</td>
+        <td class="tg-sk2j col1"
+          >Civil Design Basis update<br /> HOLD release &amp; Further work from FEED
+          - update documentation based on Reference Case#4 (technical&amp;economical
+          impact)<br /> Prepare ITT acc to Contract Strategy (Civil 1 Årskog)<br
+          /> Technical support to MTA plan (FA AkerBP) <br /> Maturing execution
+          phase</td
+        >
+        <td class="tg-sk2j col2"
+          >Verification of Pre execution and optimization finalized<br /> All start
+          products described in design basis and design methods described in design
+          briefes<br /> Constructability method established based on first construction
+          method from Company<br /> Establish QA and environmental plan</td
+        >
+        <td class="tg-sk2j col3"
+          >Freeze the overal layout HV line<br /> Ensure HSE and Environmental plan
+          included in design<br /> Establish discipline/object responsibility matrix<br
+          />
+        </td>
+        <td class="tg-sk2j col4"
+          >Inter discipline control and clash check<br /> All interfaces between
+          disciplines frozen<br /> Design between all control objects frozen<br
+          /> Multidiscipline design reviews</td
+        >
+        <td class="tg-k76o col5"
+          >Design within all conrol objects frozen<br /> All internal interfaces
+          within discipline frozen<br /> Drawing production<br /> Third party review</td
+        >
+        <td class="tg-k76o col6"
+          >Follow-on engineering <br /> Prepare as-built documentation</td
+        >
+      </tr>
+      <tr>
+        <td class="tg-ua4r side">Deliverables</td>
+        <td class="tg-ucjv col1"
+          >Civil Design Basis<br /> Amendment to FEED acc to Reference Case #4<br
+          /> Input to ITT (BoQ acc to NS3420 and ITT dwgs based on FEED dwgs) for
+          Civil 1 Årskog<br /> Detail engineering plan Level x<br />
+        </td>
+        <td class="tg-ucjv col2"
+          >Design basis and Design briefes<br /> QA-plan established<br /> Draft
+          Environmental plan<br /> Modelling all control objects to QL1</td
+        >
+        <td class="tg-ucjv col3"
+          >Environmental plan to NVE<br /> Technical plan to NVE<br /> ROS-analyse<br
+          /> Modelling all control objects to QL2<br /> Input to procurement/tender
+          documents of Civil Contractor<br /> Draft BoQ</td
+        >
+        <td class="tg-ucjv col4"
+          >Modelling all control objects to QL3<br /> Authority applications filed<br
+          /> Input to procurement/tender documents of Civil Contractor (Flyttes til
+          QL2) Draft BoQ (flyttes til QL2)</td
+        >
+        <td class="tg-0vn4 col5"
+          >Modelling all control objects to QL4<br /> Detail design models and drawings
+          Issued for Construction (IFC)<br /> Final BoQ</td
+        >
+        <td class="tg-0vn4 col6"
+          >Modelling all control objects to QL5<br /> Digital twin<br /> As-built
+          documentation<br /> Input to FDV</td
+        >
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<img src="assets/stepsgraph.png" alt="" class="img1" />
