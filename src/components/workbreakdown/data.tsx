@@ -5,6 +5,7 @@ export const data = [
     text: ` is the scopes maturity in Client’s execution model (total
   project). The scope consists of Detail Design in Clients execution
   phase.`,
+    imgUrl: "phase.png",
   },
   {
     title: "1 Main Object",
@@ -13,6 +14,7 @@ export const data = [
   three area types Buildings, Transmission and Infrastructure. Detail
   Design consists of 11 Main Objects. The Main Objects are connected to
   CTRs (Cost Time Resource)`,
+    imgUrl: "mainobject.png",
   },
   {
     title: "2 Main Discipline",
@@ -25,6 +27,7 @@ export const data = [
   toward other Main Disciplines. The Main Disciplines shall have unique
   numbering in the WBS. Discipline leads is responsible for defining
   control objects and check lists within discipline.`,
+    imgUrl: "maindisc.png",
   },
   {
     title: "3 Control object",
@@ -41,6 +44,7 @@ export const data = [
   -Mapped to deliverables list for at latest at status $4 for control
   objects -The natural level to perform Design Check and Approvals -Approx
   the same level as a DD-drawing`,
+    imgUrl: "controlobj.png",
   },
   {
     title: "4 Model object",
@@ -49,5 +53,6 @@ export const data = [
   Can be picked from libraries or created directly in 3D model. Control
   objects often consist of several model objects. Status ($1-S4) is not
   set on model object level, but on control object level.`,
+    imgUrl: "mainobject.png",
   },
 ];

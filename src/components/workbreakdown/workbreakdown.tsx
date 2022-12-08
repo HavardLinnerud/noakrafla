@@ -26,9 +26,13 @@ export const WorkBreakdown = () => {
         </div>
         <div class="text">
           <div
-            style={{ fontSize: "2em", fontWeight: "700", marginBottom: "1em" }}
+            style={{
+              fontSize: "1.5em",
+              fontWeight: "700",
+              marginBottom: "1em",
+            }}
           >
-            Description
+            Description:
           </div>
           {data.map((item, i) => {
             return (
@@ -43,19 +47,30 @@ export const WorkBreakdown = () => {
             );
           })}
         </div>
-        <div class="img">
-          <div
-            style={{ fontSize: "2em", fontWeight: "700", marginBottom: "1em" }}
-          >
-            Examples:
+        <div class="">
+          <div>
+            <h2
+              style={{
+                fontSize: "1.5em",
+                fontWeight: "700",
+              }}
+            >
+              Examples:
+            </h2>
             <div>
               {data.map((item, i) => {
                 return (
                   <>
                     {i === active && (
-                      <div class="wbtextcontainer">
-                        <b>{item.textHeader}</b>
-                        {item.text}
+                      <div class="exampleImgContainer">
+                        <b style={{ fontSize: "1.3em", marginBottom: "1em" }}>
+                          {item.textHeader}
+                        </b>
+                        <img
+                          class="example-img"
+                          src={`assets/${item.imgUrl}`}
+                          alt=""
+                        />
                       </div>
                     )}
                   </>

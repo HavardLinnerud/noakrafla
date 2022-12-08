@@ -30,7 +30,7 @@
     "tri  text"
     "img  img";
   grid-template-rows: 1fr 200px;
-  grid-template-columns: 800px 1fr;
+  grid-template-columns: 700px 1fr;
 }
 
 #workbreakdownpage > .text {
@@ -106,4 +106,14 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   max-width: 600px;
+}
+.example-img {
+  width: 600px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.041) 0px 3px 6px, rgba(0, 0, 0, 0.075) 0px 3px 6px;
+}
+.exampleImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
