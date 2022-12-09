@@ -2,28 +2,57 @@ import { useState } from "preact/hooks";
 import "./DifferenceSQL.css";
 
 const DifferenceSQL = () => {
-  const [active, setActive] = useState("quality");
+  const [active, setActive] = useState("status");
   return (
     <>
-      <button onClick={() => setActive("status")}>status</button>
-      <button onClick={() => setActive("quality")}>Quality Level</button>
+      <div class="buttonContainer">
+        <button
+          class={`customButton status ${
+            active === "status" ? "activeButton" : ""
+          }`}
+          onClick={() => setActive("status")}
+        >
+          status
+        </button>
+        <button
+          class={`customButton ql ${
+            active === "quality" ? "activeButton" : ""
+          }`}
+          onClick={() => setActive("quality")}
+        >
+          Quality Level
+        </button>
+      </div>
 
       {active === "status" && (
         <div class="mainContainer">
-          <img
-            class="img"
-            src="assets/statushevinger.png"
-            alt=""
-            style={{ width: "50%", background: "white", padding: "12px" }}
-          />
-          <ul>
-            <li>Statusheving er en intern prosess (4 ganger pr objekt)</li>
-            <li>
-              Egenkontroll (EK) og sidemannskontroll (SK) pa kontrollobjekter
-            </li>
-            <li>Kvalitetssikring av 3D-modellen</li>
-            <li>Intern progresjonskontroll, ingen leveranse mot kunde</li>
-          </ul>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              class=""
+              src="assets/statushevinger.png"
+              alt=""
+              style={{
+                maxWidth: "600px",
+                background: "white",
+                padding: "12px",
+              }}
+            />
+            <ul>
+              <li>Statusheving er en intern prosess (4 ganger pr objekt)</li>
+              <li>
+                Egenkontroll (EK) og sidemannskontroll (SK) pa kontrollobjekter
+              </li>
+              <li>Kvalitetssikring av 3D-modellen</li>
+              <li>Intern progresjonskontroll, ingen leveranse mot kunde</li>
+            </ul>
+          </div>
           <h1>Foreslått prosess for statusheving</h1>
           <img
             class="img"
@@ -57,7 +86,7 @@ const DifferenceSQL = () => {
             class="img"
             src="assets/statuschart.png"
             alt=""
-            style={{ maxWidth: "1200px" }}
+            style={{ maxWidth: "800px" }}
           />
         </div>
       )}
@@ -108,7 +137,7 @@ const DifferenceSQL = () => {
             class="img"
             src="assets/qlchart.png"
             alt=""
-            style={{ maxWidth: "1000px" }}
+            style={{ width: "800px" }}
           />
         </div>
       )}

@@ -40,7 +40,6 @@ td {
   padding: 3px 10px;
   border-radius: 3px;
   margin: 10px;
-  margin-bottom: 50px;
   transition: 0.2s all ease-in-out;
   min-height: 45px;
   /* height: 35px; */
@@ -98,10 +97,11 @@ td {
   width: 100%;
   /* background-color: green; */
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .table {
-  margin-right: 20px;
+  margin-right: 35px;
 }
 
 .arrowIcon {

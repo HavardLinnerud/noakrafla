@@ -15,12 +15,47 @@
 
 ul {
   line-height: 2em;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: rgb(64, 64, 64);
 }
 
 h1 {
-  font-size: 38px;
-  color: red;
+  font-size: 34px;
+  margin: 0.3em;
+  color: rgb(255, 136, 0);
+}
+
+.customButton {
+  width: 150px;
+  background-color: rgb(140, 140, 140);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.041) 0px 3px 6px, rgba(0, 0, 0, 0.075) 0px 3px 6px;
+}
+
+.activeButton {
+  background-color: rgb(252, 139, 11);
+}
+.customButton:hover {
+  background-color: rgb(253, 177, 89);
+}
+.customButton.status {
+  border-radius: 7px 0 0 7px;
+}
+.customButton.ql {
+  border-radius: 0 7px 7px 0;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }

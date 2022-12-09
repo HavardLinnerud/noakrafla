@@ -17,7 +17,14 @@ export const WorkBreakdown = () => {
                   onMouseEnter={() => setActive(i)}
                   // onMouseLeave={() => setActive(null)}
                 >
-                  <Triangle id={i} className="triangle" />
+                  <Triangle
+                    id={i}
+                    className="triangle"
+                    style={{
+                      height: "fit-content",
+                      width: `${(400 / 5) * (i + 1)}px`,
+                    }}
+                  />
                   <div class="centered">{item.title}</div>
                 </div>
               );
@@ -40,7 +47,7 @@ export const WorkBreakdown = () => {
                 {i === active && (
                   <div class="wbtextcontainer">
                     <b>{item.textHeader}</b>
-                    {item.text}
+                    <span style={{ whiteSpace: "pre" }}>{item.text}</span>
                   </div>
                 )}
               </>
@@ -53,6 +60,7 @@ export const WorkBreakdown = () => {
               style={{
                 fontSize: "1.5em",
                 fontWeight: "700",
+                marginTop: "0px",
               }}
             >
               Examples:
@@ -61,10 +69,10 @@ export const WorkBreakdown = () => {
               {data.map((item, i) => {
                 return (
                   <>
-                    {i === active && (
+                    {i === active && item.imgUrl && (
                       <div class="exampleImgContainer">
                         <b style={{ fontSize: "1.3em", marginBottom: "1em" }}>
-                          {item.textHeader}
+                          {item.imgTitle}
                         </b>
                         <img
                           class="example-img"
