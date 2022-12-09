@@ -1,9 +1,9 @@
-import "./workbreakdown.css";
+import "./PemDimensions.css";
 import { data } from "./data";
 import { useState } from "preact/hooks";
 import { Triangle } from "../svgs";
 
-export const WorkBreakdown = () => {
+export const PemDimensions = () => {
   const [active, setActive] = useState(0);
   return (
     <>
@@ -26,6 +26,7 @@ export const WorkBreakdown = () => {
                     }}
                   />
                   <div class="centered">{item.title}</div>
+                  <div>hello!</div>
                 </div>
               );
             })}

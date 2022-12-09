@@ -31,7 +31,7 @@
     "tri  text"
     "img  img";
   grid-template-rows: 400px 200px;
-  grid-template-columns: 550px 600px;
+  grid-template-columns: 550px 550px;
 }
 
 #workbreakdownpage > .text {
@@ -43,7 +43,6 @@
   /* align-items: center; */
   height: 600px;
   z-index: 1;
-  margin-right: 30px;
 }
 
 #workbreakdownpage > .tri {
@@ -110,7 +109,7 @@
   max-width: 600px;
 }
 .example-img {
-  width: 400px;
+  height: 200px;
   border-radius: 6px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
