@@ -1,7 +1,7 @@
 export const data = [
   {
-    title: "0 Phase",
-    textHeader: "0. Phase:",
+    title: "0. Fase",
+    textHeader: "0. Fase:",
     text: ` is the scopes maturity in Client’s execution model (total
   project). The scope consists of Detail Design in Clients execution
   phase.`,
