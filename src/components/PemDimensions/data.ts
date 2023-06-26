@@ -9,7 +9,7 @@ export const data = [
     imgTitle: "0. Phase:",
   },
   {
-    title: "1 Main Object",
+    title: "1 Hovedobjekt",
     textHeader: "1. Main Object:",
     text: ` is as a geographical part of the scope. We have defined
     three area types Buildings, Transmission and Infrastructure. Detail
