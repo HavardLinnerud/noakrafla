@@ -2,44 +2,33 @@ export const data = [
   {
     title: "0. Fase",
     textHeader: "0. Fase:",
-    text: ` is the scopes maturity in Client’s execution model (total
-  project). The scope consists of Detail Design in Clients execution
-  phase.`,
+    text: ` Er ofte prosjektmodenheten i kundens gjennomføringsplan. eksempelvis konseptfase, detaljprosjekter osv.`,
     imgUrl: "phase.png",
-    imgTitle: "0. Phase:",
+    imgTitle: "0. Fase:",
   },
   {
-    title: "1 Main Object",
-    textHeader: "1. Main Object:",
-    text: ` is as a geographical part of the scope. We have defined
-  three area types Buildings, Transmission and Infrastructure. Detail
-  Design consists of 11 Main Objects. The Main Objects are connected to
-  CTRs (Cost Time Resource)`,
+    title: "1 Objekt",
+    textHeader: "1. Objekt:",
+    text: ` Øverste del av PNSen din. Gjerne geografisk- eller funksjons-avgrenset. Eksempelvis en strekning, tunnel, bygning, stasjon etc. Hvert objekt
+    skal ha egen organisasjonsplan, KTR, budsjett  og objektleder.
+    -00. Stasjonsbygg Øst
+    -01. Stasjonsbygg Nord
+    -02. Strekning...`,
     imgUrl: "mainobject.png",
-    imgTitle: "1. Main Object: Børdalen Transformer Station",
+    imgTitle: "1. Objekt: Eks. Børdalen Transformasjons stasjon",
   },
   {
-    title: "2 Main Discipline",
-    textHeader: "2. Main Discipline:",
-    text: ` is responsible for a collection of control objects
-  The Main Objects consists of the following Main Disciplines:
-  -Electro HV cables and Earthing   
-  -EIT Building
-  -Siteprep and Earthworks
-  -Roads
-  -Landscape  
-  -W&S
-  -Structural Contrete    
-  -Structural Steel
-  -Telecom
-  -Architect
-  -HVAC
-  The Main Disciplines shall have a defined interface
-  toward other Main Disciplines. The Main Disciplines shall have unique
-  numbering in the WBS. Discipline leads is responsible for defining
-  control objects and check lists within discipline.`,
+    title: "2 Disiplin",
+    textHeader: "2. Disiplin:",
+    text: ` Er nivået under objekt. Enhver disiplin har ansvar for underliggende styrinsobjekter. Disiplinlederne er ansvarlig for å gjennomføre jevnlige
+    tverrfaglige kontroller og påse at tilliggende disipliner er koordinert og samkjørt. Skal ha sin egen PNS kode som går igjen på tvers av 1. Objektene.
+  -00.00. Objektleder Stasjonsbygg Øst
+  -01.00. Objektleder Stasjonsbygg Nord
+  -02.03. Elektro på strekning...
+
+  Disiplinledere skal i samråd med objektledere definere styringsobjekter. De skal utarbeide sjekklister og påse at de fylles ut ved MMI-heving. `,
     imgUrl: "maindisc.png",
-    imgTitle: "2. Main Discipline: Architect",
+    imgTitle: "2. Disiplin: Eks. Arkitekt",
   },
   {
     title: "3 Control object",
