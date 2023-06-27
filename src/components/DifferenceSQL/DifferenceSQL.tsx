@@ -8,7 +8,7 @@ const DifferenceSQL = () => {
       <div class="buttonContainer">
         <button
           class={`customButton status ${
-            active === "status" ? "activeButton" : ""
+            active === "Status" ? "activeButton" : ""
           }`}
           onClick={() => setActive("status")}
         >
