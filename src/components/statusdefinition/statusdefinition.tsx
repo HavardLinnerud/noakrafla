@@ -1,10 +1,8 @@
 import "./statusdefinition.css";
 import { texts } from "./definitions";
 import { useEffect, useState } from "preact/hooks";
-
 export const StatusDefinition = () => {
   const [active, setActive] = useState("S0");
-
   return (
     <>
       <div class="sdtitleContainer">
