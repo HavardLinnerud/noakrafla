@@ -27,8 +27,8 @@ export const texts = [
   },
   {
     color: "#8aab4c",
-    title: "Utført tverrfaglig koordinering",
-    id: "MMI 350",
+    title: "MMI 350",
+    id: "Utført tverrfaglig koordinering",
     description:
       "Alle objektene er modellert. Objektene er fremstilt og klassifisert i BIM-modellen som besteme systemer, med riktig mengde, størrelse, form og plassering",
     textLabel: "MMI 350: Utført tverrfaglig kontroll",
@@ -36,16 +36,16 @@ export const texts = [
   },
   {
     color: "#00823b",
-    title: "Produksjonsunderlag",
-    id: "MMI 400",
+    title: "MMI 400",
+    id: "Produksjonsunderlag",
     description: "Alle objekter er modellert. Objektene er grafisk fremstilt og klassifisert i BIM-modellen som bestemte systemer, med riktig størrelse, form, plassering og orientering. Detaljert med tanke på utførelse",
     textLabel: "MMI 400: Produksjonsunderlag",
     text: "Modellinformasjon om prosjekt, tomt, bygg, og etasje er utfylt iht. prosjektets krav. Objektene er navngitt etter objekttype iht. prosjektets krav til dette. Objekterne er beskrevet korrekt så bla. material og komposittresept fremgår. Objektene inneholder informasjon relatert til produksjon. Dette spesifiseres av utførende i samarbeid med prosjekterende og oppdragsgiver.",
   },
   {
     color: "#0f70b7",
-    title: "Som bygget",
-    id: "MMI 500",
+    title: "MMI 500",
+    id: "Som bygget",
     description:
       "Objektene er grafisk fremstilt og klassifisert i BIM-modellen, og tilsvarer deres respektive komponent i det fysiske bygget/konstruksjonen. Objektene har riktig størrelse, form, plassering og orientering med detaljert utførelse",
     textLabel: "MMI 500: Som bygget",
