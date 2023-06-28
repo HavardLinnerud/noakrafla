@@ -22,6 +22,7 @@ export const data = [
     -07. Årskog TCSC bygning
     osv..`,
     imgUrl: "mainobject.png",
+    hoverImgUrl: "Objektplan.png",
     imgTitle: "1. Objekt: 05. Årskog kompensasjons stasjon",
   },
   {
